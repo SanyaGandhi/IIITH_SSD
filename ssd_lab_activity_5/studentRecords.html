@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Records </title>
+<link rel="stylesheet" href="main.css">
+
+<!-- <style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style>  -->
+</head>  
+<body>  
+    <center> <h1> Student Records </h1> </center> 
+<div class="record1">
+    <!-- <form action="Insert()"> -->
+        <div class="container" id="form"> 
+            <label>Roll Number: </label> 
+            <input type="text" placeholder="Enter Roll Number" id="rnum" >
+            <label>Name : </label> 
+            <input type="text" placeholder="Enter Name" id="name" > 
+            <button type="submit" style="background-color:green;" onclick="Insert()">Add</button> 
+        </div> 
+    <!-- </form>   -->
+</div>
+<fieldset class="record2">
+    <legend>Records</legend>
+    <table style="width: 100%;">
+        <thead style="background-color: white; border: 1px;">
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="record" style="width: 100%; text-align: center;">
+
+        </tbody>
+    </table> 
+    <button type="submit" style="background-color:red;" onclick="Remove()">Delete last Row</button> 
+</fieldset>
+<script>
+
+    function Insert()
+    {
+
+        var rnumber = document.getElementById('rnum').value;
+        var sname = document.getElementById('name').value;
+
+        var table = `<tr>
+                        <td>${rnumber}</td>
+                        <td>${sname}</td>
+                    </tr>`;
+        document.getElementById('record').innerHTML += table;
+        document.getElementById('form').reset();
+        rnumber.value = '';
+        sname.value = '';
+    }
+
+    function Remove() 
+    {
+        document.getElementById("record").deleteRow(-1);
+    }
+
+    // function reset(){
+    //     const rest = document.getElementById("submit");
+    //     rest.addEventListener('click', function handleClick(event) {
+    //         event.preventDefault();
+    //         const name = document.getElementById("uname");
+    //         console.log(name.value);
+    //         name.value = '';
+    //         const pass = document.getElementById("pswd");
+    //         console.log(pass.value);
+    //         pass.value = '';
+    //     }
+    //     );
+</script>
+</body>   
+</html>
+
+ 

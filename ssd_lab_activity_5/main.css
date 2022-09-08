@@ -1,0 +1,79 @@
+
+.index
+{
+    background-image:url("bg.jpg");
+    /* text-align: center; */
+}
+.login
+{
+    /* vertical-align: center; */
+    width: 80vh;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 5px 10px;
+
+}
+.heading
+{
+    background-color: blue;
+    color: whitesmoke;
+}
+.index .container
+{
+    padding: 10%;
+}
+.index label
+{
+    font-size: 20px;
+    /* width: 100%; */
+    /* padding: 20%; */
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 10%; */
+}
+.index input
+{
+    font-size: 20px;
+    /* width: 100%; */
+    /* padding: 20%; */
+    border-color: black;
+    color: cadetblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3%;
+    text-align: center;
+}
+.index input:hover
+{
+    border-color: blue;  
+}
+.btn
+{
+    background-color: black;
+    color: aliceblue;
+    margin-top: 12%;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 100%;
+}
+/* input[type=text], input[type=password] { 
+    width: 100%; 
+    margin: 8px 0;
+    padding: 12px 20px; 
+    display: inline-block; 
+    border: 2px solid green; 
+    box-sizing: border-box; 
+} */
+/* .record1
+{
+    background-color: white;
+}
+.record2
+{
+    background-color: white;
+} */
+body
+{
+   background-color: whitesmoke;
+   font-family: Arial, Helvetica, sans-serif;
+}
