@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title> Login page </title>
+</head>  
+<body class="index" style="background-color:black ;">  
+    <center> <h1 class="heading"> Team details form </h1> </center> 
+    <center><form  class="login" onsubmit="meow()" >
+        <div class="container"> 
+            <label>Manager Name : </label> 
+            <input type="text" placeholder="Enter Username" name="username" id="Mname" required>
+            <br>
+            <label>Group Email: </label> 
+            <input type="email" placeholder="Enter Group mail" name="password" id="Gmail" required> 
+            <br>
+            <label>Server Username: </label> 
+            <input type="text" placeholder="Enter Server username" name="password" id="Sname" onkeydown="key()" onfocusout="clearbuff()" required> 
+            <br>
+            <label>Server Password: </label> 
+            <input type="password" placeholder="Enter Server Password" name="password" id="Spass"  required> 
+            <br>
+            <label>Confirm Password </label> 
+            <input type="password" placeholder="Confirm Password" name="password" id="Cpass" onfocusout="passcheck()" required> 
+            <br>
+            <label>Team Lead: </label> 
+            <input type="text" placeholder="Enter Team Lead's Name" name="password" id="Tlead" required> 
+            <br>
+            <table>
+                <tr>
+                    <td><label for="tmem">Team Members &nbsp;</label></td>
+                    <td><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+                            het
+                        </div>
+                        <div draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+                            Sanya
+                        </div>
+                        <div draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+                            Divyam
+                        </div>
+                        <div draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
+                            Priyanshu
+                        </div>
+                        <div draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
+                            Shivani
+                        </div>
+                        <div draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
+                            Singhal
+                        </div>
+                    </div>
+                </td>
+                    <td><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        
+                </tr>
+            </table>
+            
+            <td style="border:balck 1px;">
+            <div style="border:balck 1px;" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    
+                </div>
+            </td>
+            <button class="btn" type="submit" >Submit</button> 
+        </div> 
+    </form> 
+</center> 
+
+
+</body>  
+ 
+</html>
+
+ 
